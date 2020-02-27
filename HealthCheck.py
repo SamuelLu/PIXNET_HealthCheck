@@ -1,9 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-import webdriver
-#from selenium import webdriver
-#from selenium.webdriver.common.keys import Keys
-#import time
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import time
 #import asyncio
 from time import gmtime, strftime, ctime
 driver = webdriver.Chrome('./chromedriver')
