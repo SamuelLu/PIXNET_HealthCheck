@@ -1,9 +1,9 @@
 #!/usr/bin/python
- -*- coding: utf-8 -*-
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-import time
-import asyncio
+# -*- coding: utf-8 -*-
+#from selenium import webdriver
+#from selenium.webdriver.common.keys import Keys
+#import time
+#import asyncio
 from time import gmtime, strftime, ctime
 driver = webdriver.Chrome('./chromedriver')
 driver.get('https://www.pixnet.net')
