@@ -5,7 +5,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 #import asyncio
 from time import gmtime, strftime, ctime
-driver = webdriver.Chrome('./chromedriver')
+driver = webdriver.Chrome('/var/lib/jenkins/tools/chromedriver/chromedriver')
 driver.get('https://www.pixnet.net')
 Login = driver.find_element_by_class_name("pixnavbar__top-bar__login-link").click()
 PIX_username = driver.find_element_by_name("email").send_keys("samuellu@pixnet.tw")
