@@ -6,6 +6,13 @@ import time
 #import asyncio
 from time import gmtime, strftime, ctime
 driver = webdriver.Chrome('/var/lib/jenkins/tools/chromedriver/chromedriver')
+chrome_options = Options()
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--disable-dev-shm-usage')
+chrome_options.add_argument('--headless')
+browser = webdriver.Chrome(chrome_options=chrome_options)
+chrome_options.add_argument('blink-settings=imagesEnabled=false')
+chrome_options.add_argument('--disable-gpu')
 driver.get('https://www.pixnet.net')
 Login = driver.find_element_by_class_name("pixnavbar__top-bar__login-link").click()
 PIX_username = driver.find_element_by_name("email").send_keys("samuellu@pixnet.tw")
