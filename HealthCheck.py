@@ -19,27 +19,27 @@ PIX_username = driver.find_element_by_name("email").send_keys("samuellu@pixnet.t
 PIX_password = driver.find_element_by_name("password").send_keys("12345678")
 Login2 = driver.find_element_by_name("password").send_keys(Keys.ENTER)
 time.sleep(3)
-if driver.title == ("痞客邦"):
+if driver.title == (u"痞客邦"):
     print("大首頁 活著")
-elif driver.title != ("痞客邦"):
+elif driver.title != (u"痞客邦"):
     print("大首頁 掛了")
 driver.get('https://streamtopic.pixnet.net/')
 time.sleep(3)
-if driver.title == (":: 痞客邦 邦邦 - 你的興趣話題交流圈 ::"):
+if driver.title == (u":: 痞客邦 邦邦 - 你的興趣話題交流圈 ::"):
     print("邦邦 活著")
-elif driver.title != (":: 痞客邦 邦邦 - 你的興趣話題交流圈 ::"):
+elif driver.title != (u":: 痞客邦 邦邦 - 你的興趣話題交流圈 ::"):
     print("邦邦 掛了")
 driver.get('https://styleme.pixnet.net')
 time.sleep(3)
-if driver.title == ("潮流、美妝、消費 創造個人化風格的女性社群 PIXstyleMe"):
+if driver.title == (u"潮流、美妝、消費 創造個人化風格的女性社群 PIXstyleMe"):
     print("styleme 活著")
-elif driver.title != ("潮流、美妝、消費 創造個人化風格的女性社群 PIXstyleMe"):
+elif driver.title != (u"潮流、美妝、消費 創造個人化風格的女性社群 PIXstyleMe"):
     print("styleme 掛了")
 driver.get('https://www.pixnet.net/blog')
 time.sleep(3)
-if driver.title == ("部落格首頁 痞客邦"):
+if driver.title == (u"部落格首頁 痞客邦"):
     print("部落格首頁 活著")
-elif driver.title != ("部落格首頁 痞客邦"):
+elif driver.title != (u"部落格首頁 痞客邦"):
     print("部落格首頁 掛了")
 time.sleep(3)
 driver.close()
